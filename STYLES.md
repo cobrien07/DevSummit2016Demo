@@ -10,29 +10,6 @@ body > .ember-view {
   width: 100%;
 }
 
-.full {
-  height: 100%;
-  width: 100%;
-}
-
-.full-height {
-  height: 100%;
-}
-
-.relative {
-  position: relative;
-}
-
-table-container{
-  display: table;
-  table-layout: fixed;
-}
-
-table-container-row {
-  display: table-row;
-  width: 100%;
-}
-
 .esri-view {
   height: 100%;
   width: 100%;
