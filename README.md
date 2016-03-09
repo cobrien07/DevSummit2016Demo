@@ -1,4 +1,4 @@
-# Esri Developer Summit 2016 - Ember demo using Esri javascript application
+# Esri Developer Summit 2016 - Ember demo using Esri javascript API
 
 This project comes with minimal settings.
 It serves as the base for the demo below.
@@ -166,7 +166,7 @@ Update the app/templates/application.hbs as:
 ### Test
 As you change the component property `type` to 2d or 3d, you should see your app changing.
 
-
+## Party 3: Improve even more the map component
 ### Add config support
 The previous example illustrate how ember component can be controlled by properties.
 However, this example is kind of limited to only change form 2d to 3d but the Scene or Map views cannot really be configured.
@@ -252,6 +252,7 @@ Update the application.hbs:
 ### Test
 At this point you should be seeing a 3d map centered on Hamburg (Germany).
 
+## Part 4: Update the map content
 ### Add a layer to the map
 
 The next steps will illustrate how to update component after they have been instantiated.
