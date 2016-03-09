@@ -61,6 +61,12 @@ Open a new terminal window in your project folder and type `ember serve`. This w
 
 Open a browser tab on: `http://localhost:4200`. If everything is right, you should see the following text on you tab: Hello Dev Summit geeks!
 
+As you will see, ember app code is written using ES6.
+The code is 'transpiled' into ES5 code under the 'dist' directory. This is the result of the build of an ember app.
+Ember-cli offers different commands to control the build (minification, fingerprinting, etc.). Please refer to the [ember-cli](http://ember-cli.com/) documentation for more details.
+The guides and API reference for Ember JS can be found [there](http://emberjs.com/).
+
+
 ## Part 1: Creating a map component
 We want more than just a nice greeting test on the screen.
 The goal is to get an esri scene view to display.
@@ -323,8 +329,3 @@ The action in the controller will get the map from the model and add a layer to 
 
 If everything went right, you should see a map on the Warren Wilson College.
 If you click the 'Add Layer' button, the map should refresh and a new layer should be visible (orange circles).
-
-## Conclusion
-We strongly recommend that you read:
-* the guides and the api reference for [ember.js](http://emberjs.com/)
-* the document and tutorial for [ember-cli](http://ember-cli.com/)
