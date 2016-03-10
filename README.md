@@ -20,7 +20,7 @@ You may want to update this reference in the future.
 
 `ember install ember-cli-amd`
 
-Ember-cli comes with its own loader that is incompatible with AMD used Esri js api.
+Ember-cli comes with its own loader that is incompatible with AMD used by the Esri js api.
 We created an ember-cli addon that solves this issue [ember-cli-amd](https://github.com/Esri/ember-cli-amd)
 
 ### Step 2
@@ -47,12 +47,13 @@ module.exports = function (defaults) {
 };
 ```
 
+The addon replace the ember loader with the esri js api AMD loader.
+
 ### Step 3
 
-Update the app/index.html by adding the cdn based style after `{{content-for "head"}}`
+Update the app/styles/app.css by adding at the top of the file the esri js api cdn based style link:
 ```
-{{content-for "head"}}
-<link rel="stylesheet" href="//jsdev.arcgis.com/4.0/esri/css/main.css">
+@import url('//jsdev.arcgis.com/4.0/esri/css/main.css');
 ```
 
 ### Serve your app and test
